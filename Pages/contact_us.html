@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Contact Us!</title>
-</head>
-<body>
-<h1>Contact us!</h1>
-<form action="#" method="post">
-	
-		<fieldset>
-		<legend> Personal information</legend>
-
-		<label for="Name">Name</label>
-		<input type="text" name="Name" id="Name" > <br> <br>
+	<head>
+		<title>Contact Us!</title>
+	</head>
 		
-		<label for="Age">Age </label>
-		<input type="text" name="Age" id="Age"> <br> <br>
-		
-		<label for="e-mailadress">E-mail adress</label>
-		<input type="email" name="e-mailadress" id="e-mailadress">
-	</fieldset>
+	<body>
+		<div>
+			<nav>
+				<a href="../index.html">Home</a>
+				<a href="book_one">Book One</a>
+				<a href="book_two.html">Book Two</a>
+				<a href="extras.html">Extras</a>
+				<a href="#">Contact Us!</a>
+			</nav>
+		</div>
+			
+		<h1>Contact us!</h1>
+			
+		<form action="#" method="post">
+			
+			<fieldset>
+				<legend> Personal information</legend>
 
+				<label for="Name">Name</label>
+				<input type="text" name="Name" id="Name" autocomplete="on" autofocus="" required="" placeholder="Your Name"> <br> <br>
+				
+				<label for="Age">Age </label>
+				<input type="text" name="Age" id="Age" autocomplete="on" maxlength="2" placeholder="Your age" required=""> <br> <br>
+				
+				<label for="e-mailadress">E-mail adress</label>
+				<input type="email" name="e-mailadress" id="e-mailadress" autocomplete="on" required="" placeholder="Your e-mail adress">
+			</fieldset>
+
+			
+			 	<br><br>
+
+	   		<div>
+		    	<label for="Message">Message</label> <br>
+		    	<textarea name="Message" id="Message" rows="5" cols="130"></textarea>
+			</div>
+		 
+		 
+			<div>	Who is your alltime favourite character? 
+		 		<select id="favchar" name="Favourite Characeter">
+		 			<optgroup label="Female">
+		 		
+		 				<option>Denna</option>
+		 				<option>Devi</option>
+		 				<option>Felurian</option>
+		 				<option selected="">...</option>
+
+		 			</optgroup>
+
+			 		<optgroup label="Male">
+		 				<option>Kvothe</option>
+		 				<option>Bast</option>
+		 				<option>Master Elodin</option>
+		 			</optgroup>
+		 		</select>
+		 	</div> 
+
+
+			 <fieldset>
+		 		<legend>Favourite published book</legend>
+
+			 	<ul>
+			 		<li><input type="checkbox" name="favbook" checked="" id="tNotW" value="tNotW"> The Name of the Wind	</li>
+			 		<li><input type="checkbox" name="favbook" checked="" id="tSRoST" value="tSRoST"> The Slow Regard of Silent Things</li>
+			 		<li><input type="checkbox" name="favbook" checked="" id="aWMF" value="aWMF "> A Wise Man's Fear</li>
+			 	</ul>
+
+		 	</fieldset>
+
+		 	<fieldset>
+				<legend> Was this helpful?</legend>
+
+				<label for="yes"> </label>
+				<input type="RADIO" name="No/yes" id="yes" checked="" value="Yes" > Yes
+				<label for="no"></label>
+				<input type="radio" name="No/yes" id="no" value="No"> No
+			</fieldset>
 	
-	 <br>
-
-	<div>
-		<fieldset>
-			<legend> Was this helpful?</legend>
-
-			<label for="yes"> </label>
-			<input type="checkbox" name="Yes" id="yes" checked="" value="Yes" > Yes
-			<label for="yo"></label>
-			<input type="checkbox" name="No" id="no" checked="" value="No"> No
-		</fieldset>
-	</div>
-    <br>
-    <div>
-    	<label for="Message">Message</label>
-    	<textarea name="Message" id="Message"></textarea>
-	</div>
- 
- <div class="button">
- 	<button type="submit">Send!</button>
- </div>
-
- <select id="grupos" name="grupos">
- 	<optgroup label="frutas">
- 		<option>Banana</option>
- 		<option selected="">Cereza</option>
- 		<option>Limon</option>
- 	</optgroup>
-
- 	<optgroup label="Vegetales">
- 		<option>Zanahoria</option>
- 		<option>Berenjenas</option>
- 		<option>Papas</option>
- 	</optgroup>
- </select> 
-
- <fieldset>
- 	<legend>Cena</legend>
-
- 	<ul>
- 	<li><input type="radio" name="Cena" checked="" id="Pasta"> Pasta	</li>
- 	<li><input type="radio" name="Cena" checked="" id="Pollo"> Pollo </li>
- 	<li><input type="radio" name="Cena" checked="" id="Carne"> Carne </li>
- 	</ul>
-
- </fieldset>
- </form>
-</body>
+			<div class="button">
+			 	<button type="submit">Send!</button> <input type="reset" name="reset" id="reset" value="Reset">
+			 </div>
+		</form>
+	</body>
 </html>
